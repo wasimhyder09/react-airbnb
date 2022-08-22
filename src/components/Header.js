@@ -2,8 +2,8 @@ import logo from '../images/airbnb-logo.png';
 
 export default function Header() {
   return(
-    <div className="header">
+    <nav>
       <img src={logo} className="logo" alt="logo" />
-    </div>
+    </nav>
   )
 }
