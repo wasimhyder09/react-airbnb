@@ -38,7 +38,7 @@ section.hero {
   flex-direction: column;
 }
 .hero img.hero {
-  max-width: 500px;
+  max-width: 480px;
   align-self: center;
 }
 .hero .header {
@@ -47,9 +47,13 @@ section.hero {
 .hero .text {
   margin-top: 0px;
 }
+.cards {
+  display: flex;
+}
 .card {
   width: 185px;
   font-size: 12px;
+  margin: 0 10px;
 }
 .card .person-img {
   width: 100%;
@@ -62,4 +66,8 @@ section.hero {
 }
 .card .star {
   height: 14px;
+}
+span.location.gray,
+span.rating-count.gray {
+  margin: 0 0 0 5px;
 }
