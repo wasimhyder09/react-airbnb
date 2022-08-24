@@ -1,38 +1,26 @@
 import Header from "./components/Header"
 import Hero from "./components/Hero"
 import Card from "./components/Card"
+import cardData from "./Data"
 import './App.css';
 
 function App() {
+  const CardElements = cardData.map(card => {
+    return <Card
+            img = {card.coverImg}
+            rating = {card.stats.rating}
+            rating_count = {card.stats.reviewCount}
+            country = {card.location}
+            title = {card.title}
+            fare = {card.price}
+          />
+  })
   return (
     <div className="container">
         <Header />
         <Hero />
         <div className="cards">
-          <Card
-            img = '/katie.png'
-            rating = '5.0'
-            rating_count = '6'
-            country = 'USA'
-            title = 'Life lessons with Katie Zafere'
-            fare = '136'
-          />
-          <Card
-            img = '/bride.png'
-            rating = '5.0'
-            rating_count = '30'
-            country = 'USA'
-            title = 'Learn wedding photography'
-            fare = '125'
-          />
-          <Card
-            img = '/bike.png'
-            rating = '4.8'
-            rating_count = '2'
-            country = 'USA'
-            title = 'Group Mountain Biking'
-            fare = '50'
-          />
+          {CardElements}
         </div>
     </div>
   );
