@@ -30,6 +30,10 @@ nav {
 nav .logo {
   max-width: 100px;
 }
+.container {
+  padding-bottom: 10px;
+  background-color: #fff;
+}
 section {
   padding: 20px;
 }
@@ -38,7 +42,7 @@ section.hero {
   flex-direction: column;
 }
 .hero img.hero {
-  max-width: 480px;
+  max-width: 100%;
   align-self: center;
 }
 .hero .header {
