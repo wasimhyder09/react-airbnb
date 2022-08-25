@@ -54,11 +54,15 @@ section.hero {
   width: 185px;
   font-size: 12px;
   margin: 0 10px;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 .card .person-img {
   width: 100%;
   border-radius: 9px;
   height: 230px;
+  margin-bottom: 9px;
 }
 .card .card-stats {
   display: flex;
